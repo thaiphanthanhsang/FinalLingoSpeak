@@ -23,7 +23,7 @@ const ProfileSidebar = () => {
       const updatedUser = await updateProfile(user.id, { image: file });
       setUser(updatedUser);
       toast.success("Cập nhật ảnh đại diện thành công");
-      setTimeout(() => window.location.reload(), 500);
+      setTimeout(() => window.location.reload(), 1500);
     } catch {
       toast.error("Không thể cập nhật ảnh đại diện");
     }

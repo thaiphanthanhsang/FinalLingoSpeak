@@ -15,7 +15,7 @@ const PersonalInfoForm = () => {
       const updatedUser = await updateProfile(user.id, { fullName });
       setUser(updatedUser);
       toast.success("Cập nhật thành công");
-      setTimeout(() => window.location.reload(), 500);
+      setTimeout(() => window.location.reload(), 1500);
     } catch {
       toast.error("Không cập nhật được");
     } finally {

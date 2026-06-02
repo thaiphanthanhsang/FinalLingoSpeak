@@ -10,6 +10,7 @@ import home from "../../assets/images/home.png";
 import newWord from "../../assets/images/newWord.png";
 import review from "../../assets/images/review.png";
 import handlist from "../../assets/images/handlist.png";
+import admin from "../../assets/images/admin.png"
 
 const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -161,10 +162,8 @@ const Navbar: React.FC = () => {
        }`
                 }
               >
-                <span className="material-symbols-outlined h-10 w-10 mb-1 flex items-center justify-center text-[32px]">
-                  admin_panel_settings
-                </span>
-                <span className="text-sm font-semibold">Admin</span>
+                <img src={admin} alt="admin" className="h-10 w-10" />
+                <span className="text-sm font-semibold mt-1">Admin</span>
               </NavLink>
             )}
           </nav>
@@ -283,9 +282,8 @@ const Navbar: React.FC = () => {
               <Link
                 to="/admin"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="py-2 font-semibold text-violet-600 hover:text-violet-700 flex items-center gap-2"
+                className="py-2 font-semibold text-slate-700 hover:text-blue-600"
               >
-                <span className="material-symbols-outlined text-[18px]">admin_panel_settings</span>
                 Admin
               </Link>
             )}
@@ -296,7 +294,7 @@ const Navbar: React.FC = () => {
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="py-2 font-semibold text-slate-700 hover:text-blue-600"
               >
-                {user.fullName ?? user.email}
+                My Profile
               </Link>
             ) : (
               <Link

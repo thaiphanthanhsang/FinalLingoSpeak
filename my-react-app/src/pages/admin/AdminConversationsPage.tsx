@@ -121,14 +121,14 @@ export default function AdminConversationsPage() {
           <div className="flex items-center gap-3 mb-6">
             <button
               onClick={() => setView("list")}
-              className="p-2 rounded-xl hover:bg-slate-100"
+              className=" rounded-xl hover:bg-slate-100"
             >
               <span className="material-symbols-outlined">arrow_back</span>
             </button>
-            <h2 className="text-2xl font-black">{selected.topic}</h2>
+            <h2 className="text-2xl font-black max-w-2xl mx-auto">{selected.topic}</h2>
           </div>
 
-          <div className="space-y-4 max-w-2xl">
+          <div className="space-y-4 max-w-2xl max-w-2xl mx-auto">
             {[...selected.messages]
               .sort((a, b) => a.order - b.order)
               .map((msg, i) => {
@@ -178,7 +178,7 @@ export default function AdminConversationsPage() {
                   <th className="px-6 py-4" />
                 </tr>
               </thead>
-              <tbody className="divide-y divide-slate-50">
+              <tbody className="divide-y divide-slate-50 ">
                 {conversations.map((conv) => (
                   <tr key={conv.id} className="hover:bg-slate-50">
                     <td className="px-6 py-4 font-medium">{conv.topic}</td>

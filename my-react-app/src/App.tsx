@@ -21,7 +21,7 @@ import AdminConversationsPage from "./pages/admin/AdminConversationsPage";
 function App() {
   return (
     <>
-      <Toaster richColors position="top-right" />
+      <Toaster richColors position="top-right" closeButton/>
       <Routes>
         {/* Public */}
         <Route path="/" element={<Home />} />
