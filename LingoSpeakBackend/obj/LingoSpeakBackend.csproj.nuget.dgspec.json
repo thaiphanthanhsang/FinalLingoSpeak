@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\test\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj": {}
+    "D:\\Project\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj": {}
   },
   "projects": {
-    "D:\\Project\\test\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj": {
+    "D:\\Project\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\test\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj",
+        "projectUniqueName": "D:\\Project\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj",
         "projectName": "LingoSpeakBackend",
-        "projectPath": "D:\\Project\\test\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\test\\bk\\LingoSpeakBackend\\obj\\",
+        "projectPath": "D:\\Project\\bk\\LingoSpeakBackend\\LingoSpeakBackend.csproj",
+        "packagesPath": "C:\\Users\\sangt\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\bk\\LingoSpeakBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sangt\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,24 +97,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.27, 8.0.27]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"

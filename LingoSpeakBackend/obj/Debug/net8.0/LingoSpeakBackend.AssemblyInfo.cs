@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LingoSpeakBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+746811c036cef852360a739d8a60cc9339cccca1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7ce1b4c378ef684cb7bbfcf7302199a862382d12")]
 [assembly: System.Reflection.AssemblyProductAttribute("LingoSpeakBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LingoSpeakBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,11 +1,12 @@
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { getUser, logout } from "../../utils/auth";
 import { useEffect } from "react";
+import Navbar from "../../components/layout/Navbar";
 
 const navItems = [
   { to: "/admin", label: "Dashboard", icon: "dashboard" },
   { to: "/admin/users", label: "Tài khoản", icon: "group" },
-  { to: "/admin/topics", label: "Chủ đề từ vựng", icon: "menu_book" },
+  { to: "/admin/topics", label: "Chủ đề", icon: "menu_book" },
   { to: "/admin/conversations", label: "Hội thoại", icon: "chat" },
 ];
 
@@ -25,52 +26,95 @@ export default function AdminLayout() {
   };
 
   return (
-    <div className="flex min-h-screen bg-slate-50">
-      {/* Sidebar */}
-      <aside className="w-64 bg-white border-r border-slate-200 flex flex-col">
-        <div className="p-6 border-b border-slate-200">
-          <h1 className="text-xl font-black text-primary">LingoSpeak</h1>
-          <p className="text-xs text-slate-400 mt-1">Admin Dashboard</p>
-        </div>
+    <>
+      {/* ── Same Navbar as all other pages ─── */}
+      <Navbar />
 
-        <nav className="flex-1 p-4 space-y-1">
+      {/* ── Body below navbar ────────────────── */}
+      <div className="flex min-h-screen bg-slate-50 lg:pt-16">
+        {/* Desktop Sidebar */}
+        <aside className="pt-12 hidden lg:flex w-64 flex-col sticky top-16 h-[calc(100vh-64px)] bg-white border-r border-slate-200 overflow-y-auto flex-shrink-0">
+          <div className="px-4 pt-5 pb-2">
+            <p className="text-[11px] font-bold text-slate-400 uppercase tracking-widest px-3">
+              Quản trị
+            </p>
+          </div>
+
+          <nav className="flex-1 px-4 pb-4 space-y-1 ">
+            {navItems.map((item) => (
+              <NavLink
+                key={item.to}
+                to={item.to}
+                end={item.to === "/admin"}
+                className={({ isActive }) =>
+                  `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                    isActive
+                      ? "bg-primary text-white shadow-sm"
+                      : "text-slate-600 hover:bg-slate-100 hover:text-slate-900"
+                  }`
+                }
+              >
+                <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
+                {item.label}
+              </NavLink>
+            ))}
+          </nav>
+
+          <div className="p-4 border-t border-slate-200">
+            <div className="flex items-center gap-2 mb-3 px-1">
+              <div className="w-7 h-7 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
+                <span className="material-symbols-outlined text-primary text-[14px]">person</span>
+              </div>
+              <p className="text-sm text-slate-600 font-medium truncate">
+                {user?.fullName ?? user?.email}
+              </p>
+            </div>
+            <button
+              onClick={handleLogout}
+              className="w-full flex items-center gap-2 px-3 py-2.5 rounded-xl text-sm font-medium text-red-500 hover:bg-red-50 transition"
+            >
+              <span className="material-symbols-outlined text-[20px]">logout</span>
+              Đăng xuất
+            </button>
+          </div>
+        </aside>
+
+        {/* Main content — extra bottom padding on mobile for tab bar */}
+        <main className="flex-1 min-w-0 pb-20 lg:pb-0">
+          <Outlet />
+        </main>
+      </div>
+
+      {/* ── Mobile Bottom Tab Bar ────────────── */}
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-slate-200 shadow-[0_-2px_12px_rgba(0,0,0,0.07)]">
+        <div className="flex">
           {navItems.map((item) => (
             <NavLink
               key={item.to}
               to={item.to}
               end={item.to === "/admin"}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition ${
-                  isActive
-                    ? "bg-primary text-white"
-                    : "text-slate-600 hover:bg-slate-100"
+                `flex-1 flex flex-col items-center py-2.5 gap-0.5 transition-colors ${
+                  isActive ? "text-primary" : "text-slate-400 active:text-slate-600"
                 }`
               }
             >
-              <span className="material-symbols-outlined text-[20px]">{item.icon}</span>
-              {item.label}
+              {({ isActive }) => (
+                <>
+                  <span
+                    className={`material-symbols-outlined text-[22px] transition-all ${
+                      isActive ? "scale-110" : ""
+                    }`}
+                  >
+                    {item.icon}
+                  </span>
+                  <span className="text-[10px] font-semibold">{item.label}</span>
+                </>
+              )}
             </NavLink>
           ))}
-        </nav>
-
-        <div className="p-4 border-t border-slate-200">
-          <div className="text-sm text-slate-500 mb-3">
-            {user?.fullName ?? user?.email}
-          </div>
-          <button
-            onClick={handleLogout}
-            className="w-full flex items-center gap-2 px-3 py-2 rounded-xl text-sm font-medium text-red-500 hover:bg-red-50 transition"
-          >
-            <span className="material-symbols-outlined text-[20px]">logout</span>
-            Đăng xuất
-          </button>
         </div>
-      </aside>
-
-      {/* Main */}
-      <main className="flex-1 overflow-auto">
-        <Outlet />
-      </main>
-    </div>
+      </nav>
+    </>
   );
 }

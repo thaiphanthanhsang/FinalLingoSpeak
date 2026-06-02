@@ -108,14 +108,14 @@ export default function AdminConversationsPage() {
 
   if (loading) {
     return (
-      <div className="p-8 flex justify-center py-20">
+      <div className="p-4 sm:p-8 flex justify-center py-20 ">
         <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
       </div>
     );
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8 lg:mt-10 mt-16">
       {view === "detail" && selected ? (
         <>
           <div className="flex items-center gap-3 mb-6">
@@ -156,19 +156,19 @@ export default function AdminConversationsPage() {
         </>
       ) : (
         <>
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
             <h2 className="text-2xl font-black">Quản lý hội thoại</h2>
             <button
               onClick={openNew}
-              className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90"
+              className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90 self-start sm:self-auto"
             >
               <span className="material-symbols-outlined text-[18px]">add</span>
               Thêm hội thoại
             </button>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-            <table className="w-full text-sm">
+          <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden overflow-x-auto">
+            <table className="w-full text-sm min-w-[500px]">
               <thead className="bg-slate-50 border-b border-slate-100">
                 <tr>
                   <th className="text-left px-6 py-4 text-slate-500 font-semibold">Chủ đề</th>

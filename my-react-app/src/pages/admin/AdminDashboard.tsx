@@ -29,7 +29,7 @@ export default function AdminDashboard() {
   ];
 
   return (
-    <div className="p-8">
+    <div className="p-4 sm:p-6 lg:p-8 mt-16 lg:mt-10 ">
       <h2 className="text-2xl font-black mb-6">Tổng quan</h2>
 
       {loading ? (

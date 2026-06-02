@@ -58,15 +58,15 @@ export default function AdminUsersPage() {
   );
 
   return (
-    <div className="p-8">
-      <div className="flex justify-between items-center mb-6">
+    <div className="p-4 sm:p-6 lg:p-8 lg:mt-10 mt-16">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
         <h2 className="text-2xl font-black">Quản lý tài khoản</h2>
         <input
           type="text"
           placeholder="Tìm kiếm..."
           value={search}
           onChange={(e) => setSearch(e.target.value)}
-          className="border border-slate-200 rounded-xl px-4 py-2 text-sm w-64 focus:outline-none focus:ring-2 focus:ring-primary"
+          className="border border-slate-200 rounded-xl px-4 py-2 text-sm w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-primary"
         />
       </div>
 
@@ -75,8 +75,8 @@ export default function AdminUsersPage() {
           <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
         </div>
       ) : (
-        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
-          <table className="w-full text-sm">
+        <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden overflow-x-auto">
+          <table className="w-full text-sm min-w-[600px]">
             <thead className="bg-slate-50 border-b border-slate-100">
               <tr>
                 <th className="text-left px-6 py-4 text-slate-500 font-semibold">Người dùng</th>
