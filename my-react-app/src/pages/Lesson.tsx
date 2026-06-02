@@ -4,6 +4,7 @@ import Navbar from "../components/layout/Navbar";
 import { getAllConversations } from "../api/conversations";
 import type { Conversation } from "../types/api";
 import { getUser } from "../utils/auth";
+import { API_BASE_URL } from "../api/client";
 
 export default function Lesson() {
   const navigate = useNavigate();
@@ -47,9 +48,9 @@ export default function Lesson() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {conversations.map((conv) => {
               const progress = getProgress(conv.id);
-              const imageUrl = conv.topic
-                ? `https://source.unsplash.com/400x200/?${encodeURIComponent(conv.topic)}`
-                : "https://images.unsplash.com/photo-1503596476-1c12a8ba09a9?w=400&h=200&fit=crop";
+              const imageUrl = conv.image
+                ? `${API_BASE_URL}/uploads/images/${conv.image}`
+                : `https://source.unsplash.com/400x200/?${encodeURIComponent(conv.topic)}`;
 
               return (
                 <div

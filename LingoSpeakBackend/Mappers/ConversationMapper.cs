@@ -27,6 +27,7 @@ public static class ConversationMapper
             Topic = conversation.Topic,
             Speaker1Name = conversation.Speaker1Name,
             Speaker2Name = conversation.Speaker2Name,
+            Image = conversation.Image,
             Messages = conversation.Messages != null
                 ? conversation.Messages.Select(m => m.ToMessageDto()).ToList()
                 : new List<MessageDto>()

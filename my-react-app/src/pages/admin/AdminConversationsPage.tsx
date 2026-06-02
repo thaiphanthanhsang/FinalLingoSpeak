@@ -8,6 +8,7 @@ import {
   type MessagePayload,
 } from "../../api/conversations";
 import type { Conversation } from "../../types/api";
+import { API_BASE_URL } from "../../api/client";
 
 type View = "list" | "detail";
 
@@ -26,6 +27,7 @@ export default function AdminConversationsPage() {
     messages: [],
   });
   const [saving, setSaving] = useState(false);
+  const [imageFile, setImageFile] = useState<File | null>(null);
 
   useEffect(() => {
     fetchConversations();
@@ -41,6 +43,7 @@ export default function AdminConversationsPage() {
   const openNew = () => {
     setEditing(null);
     setForm({ topic: "", speaker1Name: "", speaker2Name: "", messages: [] });
+    setImageFile(null);
     setShowForm(true);
   };
 
@@ -52,16 +55,18 @@ export default function AdminConversationsPage() {
       speaker2Name: conv.speaker2Name ?? "",
       messages: [...conv.messages].sort((a, b) => a.order - b.order),
     });
+    setImageFile(null);
     setShowForm(true);
   };
 
   const handleSave = async () => {
     setSaving(true);
     try {
+      const payload = { ...form, image: imageFile ?? undefined };
       if (editing) {
-        await updateConversation(editing.id, form);
+        await updateConversation(editing.id, payload);
       } else {
-        await createConversation(form);
+        await createConversation(payload);
       }
       setShowForm(false);
       fetchConversations();
@@ -171,6 +176,7 @@ export default function AdminConversationsPage() {
             <table className="w-full text-sm min-w-[500px]">
               <thead className="bg-slate-50 border-b border-slate-100">
                 <tr>
+                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">Ảnh</th>
                   <th className="text-left px-6 py-4 text-slate-500 font-semibold">Chủ đề</th>
                   <th className="text-left px-6 py-4 text-slate-500 font-semibold">Speaker 1</th>
                   <th className="text-left px-6 py-4 text-slate-500 font-semibold">Speaker 2</th>
@@ -181,6 +187,20 @@ export default function AdminConversationsPage() {
               <tbody className="divide-y divide-slate-50 ">
                 {conversations.map((conv) => (
                   <tr key={conv.id} className="hover:bg-slate-50">
+                    <td className="px-6 py-4">
+                      {conv.image ? (
+                        <img
+                          src={`${API_BASE_URL}/uploads/images/${conv.image}`}
+                          alt={conv.topic}
+                          className="w-14 h-10 object-cover rounded-lg"
+                          onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                        />
+                      ) : (
+                        <div className="w-14 h-10 rounded-lg bg-slate-100 flex items-center justify-center">
+                          <span className="material-symbols-outlined text-slate-400 text-[18px]">image</span>
+                        </div>
+                      )}
+                    </td>
                     <td className="px-6 py-4 font-medium">{conv.topic}</td>
                     <td className="px-6 py-4 text-slate-500">{conv.speaker1Name ?? "—"}</td>
                     <td className="px-6 py-4 text-slate-500">{conv.speaker2Name ?? "—"}</td>
@@ -239,6 +259,32 @@ export default function AdminConversationsPage() {
                   />
                 </div>
               ))}
+            </div>
+
+            {/* Image upload */}
+            <div className="mb-4">
+              <label className="text-sm font-medium text-slate-600 mb-1 block">Ảnh hội thoại (tuỳ chọn)</label>
+              {editing?.image && !imageFile && (
+                <img
+                  src={`${API_BASE_URL}/uploads/images/${editing.image}`}
+                  alt="current"
+                  className="w-full h-32 object-cover rounded-xl mb-2"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
+                />
+              )}
+              {imageFile && (
+                <img
+                  src={URL.createObjectURL(imageFile)}
+                  alt="preview"
+                  className="w-full h-32 object-cover rounded-xl mb-2"
+                />
+              )}
+              <input
+                type="file"
+                accept="image/*"
+                onChange={(e) => setImageFile(e.target.files?.[0] ?? null)}
+                className="w-full text-sm"
+              />
             </div>
 
             <div className="mb-3">

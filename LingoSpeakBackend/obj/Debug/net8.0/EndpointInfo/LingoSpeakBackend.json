@@ -84,19 +84,50 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/ConversationCreateRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationCreateRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationCreateRequest"
+                "required": [
+                  "Topic"
+                ],
+                "type": "object",
+                "properties": {
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "Speaker1Name": {
+                    "type": "string"
+                  },
+                  "Speaker2Name": {
+                    "type": "string"
+                  },
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Messages": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/MessageDto"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Topic": {
+                  "style": "form"
+                },
+                "Speaker1Name": {
+                  "style": "form"
+                },
+                "Speaker2Name": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "Messages": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -147,19 +178,47 @@
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/ConversationUpdateRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationUpdateRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/ConversationUpdateRequest"
+                "type": "object",
+                "properties": {
+                  "Topic": {
+                    "type": "string"
+                  },
+                  "Speaker1Name": {
+                    "type": "string"
+                  },
+                  "Speaker2Name": {
+                    "type": "string"
+                  },
+                  "Image": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Messages": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/MessageDto"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "Topic": {
+                  "style": "form"
+                },
+                "Speaker1Name": {
+                  "style": "form"
+                },
+                "Speaker2Name": {
+                  "style": "form"
+                },
+                "Image": {
+                  "style": "form"
+                },
+                "Messages": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -778,59 +837,6 @@
           },
           "fullName": {
             "type": "string",
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ConversationCreateRequest": {
-        "required": [
-          "topic"
-        ],
-        "type": "object",
-        "properties": {
-          "topic": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "speaker1Name": {
-            "type": "string",
-            "nullable": true
-          },
-          "speaker2Name": {
-            "type": "string",
-            "nullable": true
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MessageDto"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "ConversationUpdateRequest": {
-        "type": "object",
-        "properties": {
-          "topic": {
-            "type": "string",
-            "nullable": true
-          },
-          "speaker1Name": {
-            "type": "string",
-            "nullable": true
-          },
-          "speaker2Name": {
-            "type": "string",
-            "nullable": true
-          },
-          "messages": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/MessageDto"
-            },
             "nullable": true
           }
         },

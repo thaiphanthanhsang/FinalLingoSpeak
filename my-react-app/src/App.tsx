@@ -17,6 +17,7 @@ import AdminDashboard from "./pages/admin/AdminDashboard";
 import AdminUsersPage from "./pages/admin/AdminUsersPage";
 import AdminTopicsPage from "./pages/admin/AdminTopicsPage";
 import AdminConversationsPage from "./pages/admin/AdminConversationsPage";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
         <Route path="/notebook/:id/word" element={<WordLesson />} />
         <Route path="/notebook/:id/falastcard" element={<VocabularyFlashcard />} />
         <Route path="/notebook/:id/learning" element={<VocabularyLearningPage />} />
+
+        {/* About */}
+        <Route path="/about" element={<About />} />
 
         {/* Profile */}
         <Route path="/profile" element={<ProfilePage />} />

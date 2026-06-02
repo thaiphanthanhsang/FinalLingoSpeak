@@ -18,15 +18,35 @@ export interface ConversationPayload {
   topic: string;
   speaker1Name?: string;
   speaker2Name?: string;
+  image?: File;
   messages?: MessagePayload[];
 }
 
+const buildFormData = (payload: ConversationPayload): FormData => {
+  const form = new FormData();
+  form.append("Topic", payload.topic);
+  if (payload.speaker1Name) form.append("Speaker1Name", payload.speaker1Name);
+  if (payload.speaker2Name) form.append("Speaker2Name", payload.speaker2Name);
+  if (payload.image) form.append("Image", payload.image);
+  if (payload.messages) {
+    payload.messages.forEach((msg, i) => {
+      form.append(`Messages[${i}].SenderName`, msg.senderName);
+      form.append(`Messages[${i}].Translation.English`, msg.translation.english);
+      form.append(`Messages[${i}].Translation.Vietnamese`, msg.translation.vietnamese);
+      form.append(`Messages[${i}].Order`, String(msg.order));
+    });
+  }
+  return form;
+};
+
 export const createConversation = (payload: ConversationPayload) =>
-  apiClient.post<Conversation>(endpoints.conversations.create, payload).then((r) => r.data);
+  apiClient
+    .post<Conversation>(endpoints.conversations.create, buildFormData(payload))
+    .then((r) => r.data);
 
 export const updateConversation = (id: number, payload: ConversationPayload) =>
   apiClient
-    .put<{ message: string }>(endpoints.conversations.update(id), payload)
+    .put<{ message: string }>(endpoints.conversations.update(id), buildFormData(payload))
     .then((r) => r.data);
 
 export const deleteConversation = (id: number) =>

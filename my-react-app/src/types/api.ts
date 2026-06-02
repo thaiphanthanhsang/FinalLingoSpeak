@@ -31,6 +31,7 @@ export interface Conversation {
   topic: string;
   speaker1Name: string | null;
   speaker2Name: string | null;
+  image: string | null;
   messages: ConversationMessage[];
 }
 

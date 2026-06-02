@@ -34,7 +34,7 @@ public class ConversationsController : ControllerBase
 
     [HttpPost]
     [Authorize(Roles = "ADMIN")]
-    public async Task<IActionResult> Create([FromBody] ConversationCreateRequest request)
+    public async Task<IActionResult> Create([FromForm] ConversationCreateRequest request)
     {
         var result = await _conversationService.CreateConversationAsync(request);
         return CreatedAtAction(nameof(GetById), new { id = result.Id }, result);
@@ -42,7 +42,7 @@ public class ConversationsController : ControllerBase
 
     [HttpPut("{id}")]
     [Authorize(Roles = "ADMIN")]
-    public async Task<IActionResult> Update(int id, [FromBody] ConversationUpdateRequest request)
+    public async Task<IActionResult> Update(int id, [FromForm] ConversationUpdateRequest request)
     {
         await _conversationService.UpdateConversationAsync(id, request);
         return Ok(new { Message = "Cập nhật dữ liệu bài hội thoại thành công." });

@@ -50,9 +50,29 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "LingoSpeakBackend.DTOs.ConversationCreateRequest",
-        "IsRequired": true
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Speaker1Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Speaker2Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Messages",
+        "Type": "System.Collections.Generic.List\u00601[[LingoSpeakBackend.DTOs.MessageDto, LingoSpeakBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -87,9 +107,29 @@
         "IsRequired": true
       },
       {
-        "Name": "request",
-        "Type": "LingoSpeakBackend.DTOs.ConversationUpdateRequest",
-        "IsRequired": true
+        "Name": "Topic",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Speaker1Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Speaker2Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Messages",
+        "Type": "System.Collections.Generic.List\u00601[[LingoSpeakBackend.DTOs.MessageDto, LingoSpeakBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
