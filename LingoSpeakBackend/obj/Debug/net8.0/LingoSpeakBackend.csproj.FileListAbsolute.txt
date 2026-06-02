@@ -1,0 +1,285 @@
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.csproj.AssemblyReference.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.AssemblyInfoInputs.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.AssemblyInfo.cs
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.csproj.CoreCompileInputs.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.MvcApplicationPartsAssemblyInfo.cs
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.sourcelink.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\appsettings.Development.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\appsettings.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.staticwebassets.endpoints.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.exe
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.deps.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.runtimeconfig.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.pdb
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Azure.Core.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Azure.Identity.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\BCrypt-Net-Next.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Humanizer.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.CodeDom.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\scopedcss\bundle\LingoSpeakBackend.styles.css
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.development.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\swae.build.ex.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpe.BF50034B.Up2Date
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\refint\LingoSpeakBackend.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.pdb
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.genruntimeconfig.cache
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\ref\LingoSpeakBackend.dll
+D:\EIU Subjects\Studying\CSW 306\Final\CSW306\csw306\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\appsettings.Development.json
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.staticwebassets.endpoints.json
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\appsettings.json
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.exe
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.deps.json
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.runtimeconfig.json
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\LingoSpeakBackend.pdb
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Azure.Core.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Azure.Identity.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\BCrypt-Net-Next.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Humanizer.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.CodeDom.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.csproj.AssemblyReference.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.AssemblyInfoInputs.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.AssemblyInfo.cs
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.csproj.CoreCompileInputs.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.MvcApplicationPartsAssemblyInfo.cs
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.MvcApplicationPartsAssemblyInfo.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.sourcelink.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\scopedcss\bundle\LingoSpeakBackend.styles.css
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.development.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\swae.build.ex.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpe.BF50034B.Up2Date
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\refint\LingoSpeakBackend.dll
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.pdb
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\LingoSpeakBackend.genruntimeconfig.cache
+D:\Project\LingoSpeak\LingoSpeakBackend\obj\Debug\net8.0\ref\LingoSpeakBackend.dll
