@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\",
+  "WorkspaceRootPath": "D:\\Project\\test\\bk\\LingoSpeakBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\lingospeak\\lingospeakbackend\\models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\test\\bk\\lingospeakbackend\\models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|solutionrelative:models\\conversation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\lingospeak\\lingospeakbackend\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\test\\bk\\lingospeakbackend\\dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|solutionrelative:dtos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\lingospeak\\lingospeakbackend\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|d:\\project\\test\\bk\\lingospeakbackend\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{356423A8-C0CA-769E-8AAC-D98B090438DB}|LingoSpeakBackend.csproj|solutionrelative:services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,9 +32,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Conversation.cs",
-              "DocumentMoniker": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\Models\\Conversation.cs",
+              "DocumentMoniker": "D:\\Project\\test\\bk\\LingoSpeakBackend\\Models\\Conversation.cs",
               "RelativeDocumentMoniker": "Models\\Conversation.cs",
-              "ToolTip": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\Models\\Conversation.cs",
+              "ToolTip": "D:\\Project\\test\\bk\\LingoSpeakBackend\\Models\\Conversation.cs",
               "RelativeToolTip": "Models\\Conversation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -45,27 +45,25 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "AuthService.cs",
-              "DocumentMoniker": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\Services\\Implementations\\AuthService.cs",
+              "DocumentMoniker": "D:\\Project\\test\\bk\\LingoSpeakBackend\\Services\\Implementations\\AuthService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\AuthService.cs",
-              "ToolTip": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "D:\\Project\\test\\bk\\LingoSpeakBackend\\Services\\Implementations\\AuthService.cs",
               "RelativeToolTip": "Services\\Implementations\\AuthService.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T17:26:45.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T17:26:45.618Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AuthDto.cs",
-              "DocumentMoniker": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\DTOs\\AuthDto.cs",
+              "DocumentMoniker": "D:\\Project\\test\\bk\\LingoSpeakBackend\\DTOs\\AuthDto.cs",
               "RelativeDocumentMoniker": "DTOs\\AuthDto.cs",
-              "ToolTip": "D:\\Project\\LingoSpeak\\LingoSpeakBackend\\DTOs\\AuthDto.cs",
+              "ToolTip": "D:\\Project\\test\\bk\\LingoSpeakBackend\\DTOs\\AuthDto.cs",
               "RelativeToolTip": "DTOs\\AuthDto.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAwwBgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-01T17:26:09.063Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-01T17:26:09.063Z"
             }
           ]
         }

@@ -1,0 +1,37 @@
+# ==================== FRONTEND (React/Vite) ====================
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# ==================== BACKEND (.NET) ====================
+# Build output
+LingoSpeakBackend/bin/
+LingoSpeakBackend/obj/
+
+# Visual Studio
+LingoSpeakBackend/.vs/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Uploads folder (runtime files, not source code)
+LingoSpeakBackend/uploads/
+
+# ==================== EDITOR ====================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.sw?
+*.sln
