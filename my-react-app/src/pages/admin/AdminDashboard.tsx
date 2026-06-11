@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { getAllUsers } from "../../api/admin";
-import { getAllConversations } from "../../api/conversations";
 import { getAllVocabularies } from "../../api/vocabularies";
 
 export default function AdminDashboard() {
@@ -8,12 +7,13 @@ export default function AdminDashboard() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([getAllUsers(), getAllConversations(), getAllVocabularies()])
-      .then(([users, convs, vocabs]) => {
+    Promise.all([getAllUsers(), getAllVocabularies()])
+      .then(([users, vocabs]) => {
         const totalWords = vocabs.reduce((sum, v) => sum + v.vocabularyItems.length, 0);
+        const withConversation = vocabs.filter((v) => v.conversation !== null).length;
         setStats({
           users: users.length,
-          conversations: convs.length,
+          conversations: withConversation,
           topics: vocabs.length,
           words: totalWords,
         });

@@ -4,6 +4,7 @@ using LingoSpeakBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LingoSpeakBackend.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260611141221_AddReadingPassage")]
+    partial class AddReadingPassage
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -115,29 +118,6 @@ namespace LingoSpeakBackend.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("StudiedConversations");
-                });
-
-            modelBuilder.Entity("LingoSpeakBackend.Models.StudiedReadingPassage", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("ReadingPassageId")
-                        .HasColumnType("int");
-
-                    b.Property<Guid>("UserId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ReadingPassageId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("StudiedReadingPassages");
                 });
 
             modelBuilder.Entity("LingoSpeakBackend.Models.StudiedVocabulary", b =>
@@ -340,25 +320,6 @@ namespace LingoSpeakBackend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("LingoSpeakBackend.Models.StudiedReadingPassage", b =>
-                {
-                    b.HasOne("LingoSpeakBackend.Models.ReadingPassage", "ReadingPassage")
-                        .WithMany()
-                        .HasForeignKey("ReadingPassageId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("LingoSpeakBackend.Models.User", "User")
-                        .WithMany("StudiedReadingPassages")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ReadingPassage");
-
-                    b.Navigation("User");
-                });
-
             modelBuilder.Entity("LingoSpeakBackend.Models.StudiedVocabulary", b =>
                 {
                     b.HasOne("LingoSpeakBackend.Models.User", "User")
@@ -430,8 +391,6 @@ namespace LingoSpeakBackend.Migrations
             modelBuilder.Entity("LingoSpeakBackend.Models.User", b =>
                 {
                     b.Navigation("StudiedConversations");
-
-                    b.Navigation("StudiedReadingPassages");
 
                     b.Navigation("StudiedVocabularies");
                 });

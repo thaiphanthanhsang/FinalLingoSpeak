@@ -1,9 +1,19 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import applauseSound from "../assets/sounds/applause.mp3";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getVocabularyById } from "../api/vocabularies";
+import { getNextStepPath } from "../utils/learningFlow";
+import type { Vocabulary } from "../types/api";
 
 export default function SpeakingResult() {
   const navigate = useNavigate();
+  const { id } = useParams<{ id: string }>();
+  const [topic, setTopic] = useState<Vocabulary | null>(null);
+
+  useEffect(() => {
+    if (!id) return;
+    getVocabularyById(Number(id)).then(setTopic);
+  }, [id]);
 
   useEffect(() => {
     const audio = new Audio(applauseSound);
@@ -99,11 +109,12 @@ export default function SpeakingResult() {
           {/* Buttons */}
           <div className="w-full flex flex-col gap-4">
             <button
-              onClick={() => navigate("/lesson")}
-              className="w-full py-4 px-6 bg-primary text-white rounded-lg font-semibold shadow-sm hover:bg-primary/90 transition flex items-center justify-center gap-2"
+              onClick={() => topic && navigate(getNextStepPath(topic, "conversation"))}
+              disabled={!topic}
+              className="w-full py-4 px-6 bg-primary text-white rounded-lg font-semibold shadow-sm hover:bg-primary/90 transition flex items-center justify-center gap-2 disabled:opacity-60"
             >
-              <span className="material-symbols-outlined">library_books</span>
-              Back to Topics
+              <span className="material-symbols-outlined">arrow_forward</span>
+              Tiếp tục
             </button>
 
             <button
@@ -112,6 +123,13 @@ export default function SpeakingResult() {
             >
               <span className="material-symbols-outlined">replay</span>
               Review Conversation
+            </button>
+
+            <button
+              onClick={() => navigate("/topics")}
+              className="w-full py-2 text-sm text-slate-400 hover:text-primary transition"
+            >
+              Quay lại danh sách chủ đề
             </button>
           </div>
         </div>

@@ -28,13 +28,35 @@ const features = [
   },
 ];
 
-const stack = [
-  { name: "React + TypeScript", icon: "code", color: "text-blue-500" },
-  { name: "Tailwind CSS", icon: "palette", color: "text-cyan-500" },
-  { name: "ASP.NET Core 8", icon: "dns", color: "text-purple-500" },
-  { name: "SQL Server", icon: "storage", color: "text-orange-500" },
-  { name: "Entity Framework Core", icon: "layers", color: "text-green-500" },
-  { name: "JWT Authentication", icon: "lock", color: "text-red-500" },
+const learningPath = [
+  {
+    step: "1",
+    icon: "category",
+    title: "Chọn chủ đề",
+    desc: "Bắt đầu với chủ đề quen thuộc trong cuộc sống như gia đình, du lịch, công việc...",
+    color: "bg-blue-50 text-blue-600",
+  },
+  {
+    step: "2",
+    icon: "style",
+    title: "Học từ vựng",
+    desc: "Ghi nhớ từ mới qua flashcard, phát âm chuẩn IPA và ví dụ minh hoạ.",
+    color: "bg-cyan-50 text-cyan-600",
+  },
+  {
+    step: "3",
+    icon: "forum",
+    title: "Luyện hội thoại",
+    desc: "Đọc và nghe các đoạn hội thoại mẫu để hiểu cách dùng từ trong ngữ cảnh thực tế.",
+    color: "bg-emerald-50 text-emerald-600",
+  },
+  {
+    step: "4",
+    icon: "mic",
+    title: "Luyện nói",
+    desc: "Thực hành phát âm, ghi âm và so sánh với người bản xứ để tự tin giao tiếp.",
+    color: "bg-violet-50 text-violet-600",
+  },
 ];
 
 export default function About() {
@@ -93,17 +115,27 @@ export default function About() {
           </div>
         </section>
 
-        {/* Tech Stack */}
+        {/* Learning Path */}
         <section>
-          <h2 className="text-2xl font-black text-slate-800 mb-6 text-center">Công nghệ sử dụng</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {stack.map((s) => (
+          <h2 className="text-2xl font-black text-slate-800 mb-2 text-center">Lộ trình học tập</h2>
+          <p className="text-center text-slate-500 mb-6 max-w-lg mx-auto">
+            Mỗi chủ đề trên LingoSpeak đều theo một lộ trình rõ ràng, giúp bạn học từ vựng và luyện nói cùng lúc.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {learningPath.map((p) => (
               <div
-                key={s.name}
-                className="flex items-center gap-3 p-4 bg-white rounded-2xl border border-slate-100 shadow-sm"
+                key={p.step}
+                className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition"
               >
-                <span className={`material-symbols-outlined text-[22px] ${s.color}`}>{s.icon}</span>
-                <span className="text-sm font-semibold text-slate-700">{s.name}</span>
+                <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${p.color}`}>
+                  <span className="material-symbols-outlined text-[22px]">{p.icon}</span>
+                </div>
+                <div>
+                  <p className="font-bold text-slate-800">
+                    Bước {p.step}: {p.title}
+                  </p>
+                  <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{p.desc}</p>
+                </div>
               </div>
             ))}
           </div>

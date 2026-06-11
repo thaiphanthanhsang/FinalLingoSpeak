@@ -7,7 +7,6 @@ const navItems = [
   { to: "/admin", label: "Dashboard", icon: "dashboard" },
   { to: "/admin/users", label: "Tài khoản", icon: "group" },
   { to: "/admin/topics", label: "Chủ đề", icon: "menu_book" },
-  { to: "/admin/conversations", label: "Hội thoại", icon: "chat" },
 ];
 
 export default function AdminLayout() {
