@@ -2,6 +2,8 @@ import { useNavigate, useParams } from "react-router-dom";
 import applauseSound from "../assets/sounds/applause.mp3";
 import { useEffect, useState } from "react";
 import { getVocabularyById } from "../api/vocabularies";
+import { markConversationStudied } from "../api/userProgress";
+import { getUser, setUser } from "../utils/auth";
 import { getNextStepPath } from "../utils/learningFlow";
 import type { Vocabulary } from "../types/api";
 
@@ -14,6 +16,24 @@ export default function SpeakingResult() {
     if (!id) return;
     getVocabularyById(Number(id)).then(setTopic);
   }, [id]);
+
+  useEffect(() => {
+    if (!topic?.conversation) return;
+    const conversation = topic.conversation;
+    const user = getUser();
+    if (!user || user.studiedConversationIds.includes(conversation.id)) return;
+
+    markConversationStudied(conversation.id)
+      .then(() => {
+        setUser({
+          ...user,
+          studiedConversationIds: [...user.studiedConversationIds, conversation.id],
+        });
+      })
+      .catch(() => {
+        // ignore if already marked
+      });
+  }, [topic]);
 
   useEffect(() => {
     const audio = new Audio(applauseSound);
