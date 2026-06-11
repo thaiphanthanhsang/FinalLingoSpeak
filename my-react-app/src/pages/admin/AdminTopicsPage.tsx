@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   getAllVocabularies,
   createVocabulary,
@@ -37,6 +38,7 @@ const emptyTopicForm = (): TopicFormState => ({
 });
 
 export default function AdminTopicsPage() {
+  const { t } = useTranslation();
   const [topics, setTopics] = useState<Vocabulary[]>([]);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useState<View>("topics");
@@ -140,7 +142,7 @@ export default function AdminTopicsPage() {
   };
 
   const handleDeleteTopic = async (id: number) => {
-    if (!confirm("Xoá chủ đề này và toàn bộ từ vựng, hội thoại bên trong?")) return;
+    if (!confirm(t("admin.topics.confirmDeleteTopic"))) return;
     await deleteVocabulary(id);
     fetchTopics();
   };
@@ -223,7 +225,7 @@ export default function AdminTopicsPage() {
   };
 
   const handleDeleteItem = async (item: VocabularyItem) => {
-    if (!selectedTopic || !confirm("Xoá từ vựng này?")) return;
+    if (!selectedTopic || !confirm(t("admin.topics.confirmDeleteItem"))) return;
     await deleteVocabularyItem(selectedTopic.id, item.id);
     const updated = await import("../../api/vocabularies").then((m) =>
       m.getVocabularyById(selectedTopic.id),
@@ -248,7 +250,7 @@ export default function AdminTopicsPage() {
           onClick={() => setView("topics")}
           className={`text-sm font-semibold ${view === "topics" ? "text-primary" : "text-slate-400 hover:text-slate-600"}`}
         >
-          Chủ đề
+          {t("admin.topics.breadcrumb")}
         </button>
         {view === "items" && selectedTopic && (
           <>
@@ -263,13 +265,13 @@ export default function AdminTopicsPage() {
       {view === "topics" ? (
         <>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
-            <h2 className="text-2xl font-black">Quản lý chủ đề</h2>
+            <h2 className="text-2xl font-black">{t("admin.topics.manageTitle")}</h2>
             <button
               onClick={openNewTopic}
               className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90 self-start sm:self-auto"
             >
               <span className="material-symbols-outlined text-[18px]">add</span>
-              Thêm chủ đề
+              {t("admin.topics.addTopic")}
             </button>
           </div>
 
@@ -296,9 +298,9 @@ export default function AdminTopicsPage() {
                     <p className="font-bold">{topic.topicName.english}</p>
                     <p className="text-sm text-slate-500">{topic.topicName.vietnamese}</p>
                     <div className="flex items-center gap-3 mt-1">
-                      <p className="text-xs text-slate-400">{topic.vocabularyItems.length} từ vựng</p>
+                      <p className="text-xs text-slate-400">{topic.vocabularyItems.length} {t("admin.topics.vocabularyCount")}</p>
                       <p className="text-xs text-slate-400">
-                        {topic.conversation?.messages.length ?? 0} tin nhắn hội thoại
+                        {topic.conversation?.messages.length ?? 0} {t("admin.topics.messagesCount")}
                       </p>
                     </div>
 
@@ -307,7 +309,7 @@ export default function AdminTopicsPage() {
                         onClick={() => openTopicItems(topic)}
                         className="flex-1 py-1.5 rounded-lg bg-slate-100 text-slate-600 text-xs font-semibold hover:bg-slate-200"
                       >
-                        Từ vựng
+                        {t("admin.topics.vocabulary")}
                       </button>
                       <button
                         onClick={() => openEditTopic(topic)}
@@ -332,14 +334,14 @@ export default function AdminTopicsPage() {
         <>
           <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
             <h2 className="text-xl sm:text-2xl font-black">
-              Từ vựng: {selectedTopic?.topicName.english}
+              {t("admin.topics.vocabOf")} {selectedTopic?.topicName.english}
             </h2>
             <button
               onClick={openNewItem}
               className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-xl text-sm font-semibold hover:opacity-90 self-start sm:self-auto"
             >
               <span className="material-symbols-outlined text-[18px]">add</span>
-              Thêm từ
+              {t("admin.topics.addWord")}
             </button>
           </div>
 
@@ -347,10 +349,10 @@ export default function AdminTopicsPage() {
             <table className="w-full text-sm min-w-[500px]">
               <thead className="bg-slate-50 border-b border-slate-100">
                 <tr>
-                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">Tiếng Anh</th>
-                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">Tiếng Việt</th>
-                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">IPA</th>
-                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">Loại từ</th>
+                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">{t("admin.topics.english")}</th>
+                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">{t("admin.topics.vietnamese")}</th>
+                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">{t("admin.topics.ipa")}</th>
+                  <th className="text-left px-6 py-4 text-slate-500 font-semibold">{t("admin.topics.wordType")}</th>
                   <th className="px-6 py-4" />
                 </tr>
               </thead>
@@ -396,12 +398,12 @@ export default function AdminTopicsPage() {
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
           <div className="bg-white rounded-2xl p-6 w-full max-w-2xl shadow-2xl max-h-[90vh] overflow-y-auto">
             <h3 className="text-lg font-bold mb-4">
-              {editingTopic ? "Chỉnh sửa chủ đề" : "Thêm chủ đề mới"}
+              {editingTopic ? t("admin.topics.editTopicTitle") : t("admin.topics.addTopicTitle")}
             </h3>
             <div className="space-y-4">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div>
-                  <label className="text-sm font-medium text-slate-600 mb-1 block">Tên tiếng Anh</label>
+                  <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.nameEn")}</label>
                   <input
                     type="text"
                     value={topicForm.en}
@@ -410,7 +412,7 @@ export default function AdminTopicsPage() {
                   />
                 </div>
                 <div>
-                  <label className="text-sm font-medium text-slate-600 mb-1 block">Tên tiếng Việt</label>
+                  <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.nameVi")}</label>
                   <input
                     type="text"
                     value={topicForm.vi}
@@ -420,7 +422,7 @@ export default function AdminTopicsPage() {
                 </div>
               </div>
               <div>
-                <label className="text-sm font-medium text-slate-600 mb-1 block">Ảnh chủ đề</label>
+                <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.topicImage")}</label>
                 {editingTopic?.image && !topicImage && (
                   <img
                     src={`${API_BASE_URL}/uploads/images/${editingTopic.image}`}
@@ -438,10 +440,10 @@ export default function AdminTopicsPage() {
               </div>
 
               <div className="border-t border-slate-100 pt-4">
-                <h4 className="text-sm font-bold text-slate-700 mb-3">Hội thoại của chủ đề</h4>
+                <h4 className="text-sm font-bold text-slate-700 mb-3">{t("admin.topics.conversationSection")}</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Speaker 1</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.speaker1")}</label>
                     <input
                       type="text"
                       value={topicForm.speaker1Name}
@@ -450,7 +452,7 @@ export default function AdminTopicsPage() {
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Speaker 2</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.speaker2")}</label>
                     <input
                       type="text"
                       value={topicForm.speaker2Name}
@@ -461,12 +463,12 @@ export default function AdminTopicsPage() {
                 </div>
 
                 <div className="flex justify-between items-center mb-2">
-                  <p className="text-sm font-semibold text-slate-600">Tin nhắn</p>
+                  <p className="text-sm font-semibold text-slate-600">{t("admin.topics.messagesLabel")}</p>
                   <button
                     onClick={addMessage}
                     className="text-xs px-3 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 font-medium"
                   >
-                    + Thêm tin
+                    {t("admin.topics.addMessage")}
                   </button>
                 </div>
 
@@ -479,7 +481,7 @@ export default function AdminTopicsPage() {
                           onChange={(e) => updateMessage(i, { senderName: e.target.value })}
                           className="flex-1 border border-slate-200 rounded-lg px-2 py-1.5 text-xs focus:outline-none"
                         >
-                          <option value="">-- Chọn người nói --</option>
+                          <option value="">{t("admin.topics.selectSpeaker")}</option>
                           <option value={topicForm.speaker1Name}>{topicForm.speaker1Name || "Speaker 1"}</option>
                           <option value={topicForm.speaker2Name}>{topicForm.speaker2Name || "Speaker 2"}</option>
                         </select>
@@ -503,7 +505,7 @@ export default function AdminTopicsPage() {
                       />
                       <input
                         type="text"
-                        placeholder="Tiếng Việt..."
+                        placeholder={`${t("admin.topics.vietnamese")}...`}
                         value={msg.translation.vietnamese}
                         onChange={(e) =>
                           updateMessage(i, {
@@ -518,10 +520,10 @@ export default function AdminTopicsPage() {
               </div>
 
               <div className="border-t border-slate-100 pt-4">
-                <h4 className="text-sm font-bold text-slate-700 mb-3">Bài đọc của chủ đề</h4>
+                <h4 className="text-sm font-bold text-slate-700 mb-3">{t("admin.topics.readingSection")}</h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Tiêu đề (Anh)</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.titleEn")}</label>
                     <input
                       type="text"
                       value={topicForm.readingTitle.english}
@@ -535,7 +537,7 @@ export default function AdminTopicsPage() {
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Tiêu đề (Việt)</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.titleVi")}</label>
                     <input
                       type="text"
                       value={topicForm.readingTitle.vietnamese}
@@ -551,7 +553,7 @@ export default function AdminTopicsPage() {
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Nội dung (Anh)</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.contentEn")}</label>
                     <textarea
                       rows={5}
                       value={topicForm.readingContent.english}
@@ -565,7 +567,7 @@ export default function AdminTopicsPage() {
                     />
                   </div>
                   <div>
-                    <label className="text-sm font-medium text-slate-600 mb-1 block">Nội dung (Việt)</label>
+                    <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.contentVi")}</label>
                     <textarea
                       rows={5}
                       value={topicForm.readingContent.vietnamese}
@@ -586,14 +588,14 @@ export default function AdminTopicsPage() {
                 onClick={() => setShowTopicForm(false)}
                 className="flex-1 py-2.5 rounded-xl border border-slate-200 text-sm font-medium hover:bg-slate-50"
               >
-                Huỷ
+                {t("admin.topics.cancel")}
               </button>
               <button
                 onClick={handleSaveTopic}
                 disabled={savingTopic || !topicForm.en || !topicForm.vi}
                 className="flex-1 py-2.5 rounded-xl bg-primary text-white text-sm font-medium hover:opacity-90 disabled:opacity-60"
               >
-                {savingTopic ? "Đang lưu..." : "Lưu"}
+                {savingTopic ? t("admin.topics.saving") : t("admin.topics.save")}
               </button>
             </div>
           </div>
@@ -605,15 +607,15 @@ export default function AdminTopicsPage() {
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-2xl">
             <h3 className="text-lg font-bold mb-4">
-              {editingItem ? "Chỉnh sửa từ vựng" : "Thêm từ vựng mới"}
+              {editingItem ? t("admin.topics.editItemTitle") : t("admin.topics.addItemTitle")}
             </h3>
             <div className="space-y-3">
               {[
-                { key: "meaningEn", label: "Tiếng Anh" },
-                { key: "meaningVi", label: "Tiếng Việt" },
-                { key: "ipa", label: "IPA (tuỳ chọn)" },
-                { key: "wordType", label: "Loại từ (tuỳ chọn)" },
-                { key: "description", label: "Mô tả / Ví dụ (tuỳ chọn)" },
+                { key: "meaningEn", label: t("admin.topics.english") },
+                { key: "meaningVi", label: t("admin.topics.vietnamese") },
+                { key: "ipa", label: t("admin.topics.ipaOptional") },
+                { key: "wordType", label: t("admin.topics.wordTypeOptional") },
+                { key: "description", label: t("admin.topics.descriptionOptional") },
               ].map(({ key, label }) => (
                 <div key={key}>
                   <label className="text-sm font-medium text-slate-600 mb-1 block">{label}</label>
@@ -628,7 +630,7 @@ export default function AdminTopicsPage() {
                 </div>
               ))}
               <div>
-                <label className="text-sm font-medium text-slate-600 mb-1 block">Ảnh (tuỳ chọn)</label>
+                <label className="text-sm font-medium text-slate-600 mb-1 block">{t("admin.topics.imageOptional")}</label>
                 <input
                   type="file"
                   accept="image/*"
@@ -642,14 +644,14 @@ export default function AdminTopicsPage() {
                 onClick={() => setShowItemForm(false)}
                 className="flex-1 py-2.5 rounded-xl border border-slate-200 text-sm font-medium hover:bg-slate-50"
               >
-                Huỷ
+                {t("admin.topics.cancel")}
               </button>
               <button
                 onClick={handleSaveItem}
                 disabled={savingItem || !itemForm.meaningEn || !itemForm.meaningVi}
                 className="flex-1 py-2.5 rounded-xl bg-primary text-white text-sm font-medium hover:opacity-90 disabled:opacity-60"
               >
-                {savingItem ? "Đang lưu..." : "Lưu"}
+                {savingItem ? t("admin.topics.saving") : t("admin.topics.save")}
               </button>
             </div>
           </div>

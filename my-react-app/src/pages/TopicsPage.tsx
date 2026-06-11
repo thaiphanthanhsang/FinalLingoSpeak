@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import Navbar from "../components/layout/Navbar";
 import { getAllVocabularies } from "../api/vocabularies";
 import type { Vocabulary } from "../types/api";
 import { getUser } from "../utils/auth";
+import { getTopicProgress } from "../utils/learningFlow";
 import { API_BASE_URL } from "../api/client";
 
 export default function TopicsPage() {
   const navigate = useNavigate();
+  const { t } = useTranslation();
   const [topics, setTopics] = useState<Vocabulary[]>([]);
   const [loading, setLoading] = useState(true);
   const user = getUser();
@@ -18,31 +21,23 @@ export default function TopicsPage() {
       .finally(() => setLoading(false));
   }, []);
 
-  const getVocabProgress = (topic: Vocabulary) => {
-    if (!user || topic.vocabularyItems.length === 0) return 0;
-    const studied = topic.vocabularyItems.filter((item) =>
-      user.studiedVocabularyIds.includes(item.id),
-    ).length;
-    return Math.round((studied / topic.vocabularyItems.length) * 100);
-  };
-
   return (
     <div className="min-h-screen bg-background-light dark:bg-background-dark">
       <Navbar />
 
       <main className="max-w-[1200px] mx-auto px-4 md:px-10 py-10 mt-16 md:mt-24">
-        <h1 className="text-3xl md:text-4xl font-black mb-6">Topics</h1>
+        <h1 className="text-3xl md:text-4xl font-black mb-6">{t("topicsPage.title")}</h1>
 
         {loading ? (
           <div className="flex justify-center py-20">
             <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
           </div>
         ) : topics.length === 0 ? (
-          <p className="text-center text-slate-400 py-20">Chưa có chủ đề nào.</p>
+          <p className="text-center text-slate-400 py-20">{t("topicsPage.noTopics")}</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {topics.map((topic) => {
-              const progress = getVocabProgress(topic);
+              const progress = getTopicProgress(topic, user);
               const imageUrl = topic.image
                 ? `${API_BASE_URL}/uploads/images/${topic.image}`
                 : `https://source.unsplash.com/400x200/?${encodeURIComponent(topic.topicName.english)}`;
@@ -78,14 +73,14 @@ export default function TopicsPage() {
                       </span>
                       <span className="text-[#4c739a] font-medium flex items-center gap-1">
                         <span className="material-symbols-outlined text-[16px]">translate</span>
-                        {topic.vocabularyItems.length} từ
+                        {topic.vocabularyItems.length} {t("topicsPage.words")}
                       </span>
                     </div>
 
                     {topic.conversation && (
                       <span className="text-[#4c739a] font-medium flex items-center gap-1 text-xs">
                         <span className="material-symbols-outlined text-[16px]">chat</span>
-                        {topic.conversation.messages.length} câu hội thoại
+                        {topic.conversation.messages.length} {t("topicsPage.conversationLines")}
                       </span>
                     )}
 
@@ -95,7 +90,7 @@ export default function TopicsPage() {
                           progress > 0 ? "text-primary" : "text-slate-400"
                         }`}
                       >
-                        {progress > 0 ? `Đã học ${progress}%` : "Chưa học"}
+                        {progress > 0 ? t("topicsPage.learned", { percent: progress }) : t("topicsPage.notStarted")}
                       </span>
                       <div className="w-full bg-[#e7edf3] dark:bg-[#2a3b4d] rounded-full h-2 mt-1">
                         <div

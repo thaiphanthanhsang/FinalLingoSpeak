@@ -1,65 +1,24 @@
+import { useTranslation } from "react-i18next";
 import Navbar from "../components/layout/Navbar";
 import logo from "../assets/images/logo.png";
 
 const features = [
-  {
-    icon: "record_voice_over",
-    title: "Luyện nghe & nói",
-    desc: "Thực hành hội thoại thực tế cùng phản xạ giao tiếp tự nhiên.",
-    color: "bg-blue-50 text-blue-600",
-  },
-  {
-    icon: "style",
-    title: "Flashcard thông minh",
-    desc: "Ghi nhớ từ vựng nhanh hơn với flashcard cá nhân hóa theo tiến độ.",
-    color: "bg-cyan-50 text-cyan-600",
-  },
-  {
-    icon: "mic",
-    title: "Ghi âm & so sánh",
-    desc: "So sánh giọng nói với người bản xứ để cải thiện phát âm.",
-    color: "bg-emerald-50 text-emerald-600",
-  },
-  {
-    icon: "menu_book",
-    title: "Học theo chủ đề",
-    desc: "Chọn chủ đề phù hợp với mục tiêu học tập và giao tiếp hằng ngày.",
-    color: "bg-violet-50 text-violet-600",
-  },
+  { icon: "record_voice_over", key: "listeningSpeaking", color: "bg-blue-50 text-blue-600" },
+  { icon: "style", key: "smartFlashcard", color: "bg-cyan-50 text-cyan-600" },
+  { icon: "mic", key: "recording", color: "bg-emerald-50 text-emerald-600" },
+  { icon: "menu_book", key: "topicLearning", color: "bg-violet-50 text-violet-600" },
 ];
 
 const learningPath = [
-  {
-    step: "1",
-    icon: "category",
-    title: "Chọn chủ đề",
-    desc: "Bắt đầu với chủ đề quen thuộc trong cuộc sống như gia đình, du lịch, công việc...",
-    color: "bg-blue-50 text-blue-600",
-  },
-  {
-    step: "2",
-    icon: "style",
-    title: "Học từ vựng",
-    desc: "Ghi nhớ từ mới qua flashcard, phát âm chuẩn IPA và ví dụ minh hoạ.",
-    color: "bg-cyan-50 text-cyan-600",
-  },
-  {
-    step: "3",
-    icon: "forum",
-    title: "Luyện hội thoại",
-    desc: "Đọc và nghe các đoạn hội thoại mẫu để hiểu cách dùng từ trong ngữ cảnh thực tế.",
-    color: "bg-emerald-50 text-emerald-600",
-  },
-  {
-    step: "4",
-    icon: "mic",
-    title: "Luyện nói",
-    desc: "Thực hành phát âm, ghi âm và so sánh với người bản xứ để tự tin giao tiếp.",
-    color: "bg-violet-50 text-violet-600",
-  },
+  { step: "1", icon: "category", key: "step1", color: "bg-blue-50 text-blue-600" },
+  { step: "2", icon: "style", key: "step2", color: "bg-cyan-50 text-cyan-600" },
+  { step: "3", icon: "forum", key: "step3", color: "bg-emerald-50 text-emerald-600" },
+  { step: "4", icon: "mic", key: "step4", color: "bg-violet-50 text-violet-600" },
 ];
 
 export default function About() {
+  const { t } = useTranslation();
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
       <Navbar />
@@ -77,38 +36,38 @@ export default function About() {
             </span>
           </div>
           <p className="text-xl text-slate-500 max-w-lg leading-relaxed">
-            Nền tảng học tiếng Anh thông minh — giúp bạn luyện nói, tích lũy từ vựng và tự tin giao tiếp mỗi ngày.
+            {t("about.heroDescription")}
           </p>
           <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-blue-50 text-blue-600 text-sm font-semibold border border-blue-100">
             <span className="material-symbols-outlined text-[16px]">info</span>
-            Phiên bản 1.0.0
+            {t("about.version")}
           </span>
         </section>
 
         {/* Mission */}
         <section className="bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl p-8 text-white text-center shadow-lg">
           <span className="material-symbols-outlined text-4xl mb-3 block">emoji_objects</span>
-          <h2 className="text-2xl font-black mb-3">Sứ mệnh của chúng tôi</h2>
+          <h2 className="text-2xl font-black mb-3">{t("about.missionTitle")}</h2>
           <p className="text-blue-50 leading-relaxed max-w-xl mx-auto">
-            LingoSpeak được xây dựng với mục tiêu giúp người học tiếng Anh tại Việt Nam tiếp cận ngôn ngữ một cách tự nhiên và hiệu quả — không áp lực, không nhàm chán, chỉ cần 15–20 phút mỗi ngày.
+            {t("about.missionText")}
           </p>
         </section>
 
         {/* Features */}
         <section>
-          <h2 className="text-2xl font-black text-slate-800 mb-6 text-center">Tính năng nổi bật</h2>
+          <h2 className="text-2xl font-black text-slate-800 mb-6 text-center">{t("about.featuresTitle")}</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {features.map((f) => (
               <div
-                key={f.title}
+                key={f.key}
                 className="flex items-start gap-4 p-5 bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition"
               >
                 <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${f.color}`}>
                   <span className="material-symbols-outlined text-[22px]">{f.icon}</span>
                 </div>
                 <div>
-                  <p className="font-bold text-slate-800">{f.title}</p>
-                  <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{f.desc}</p>
+                  <p className="font-bold text-slate-800">{t(`about.features.${f.key}.title`)}</p>
+                  <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{t(`about.features.${f.key}.desc`)}</p>
                 </div>
               </div>
             ))}
@@ -117,9 +76,9 @@ export default function About() {
 
         {/* Learning Path */}
         <section>
-          <h2 className="text-2xl font-black text-slate-800 mb-2 text-center">Lộ trình học tập</h2>
+          <h2 className="text-2xl font-black text-slate-800 mb-2 text-center">{t("about.learningPathTitle")}</h2>
           <p className="text-center text-slate-500 mb-6 max-w-lg mx-auto">
-            Mỗi chủ đề trên LingoSpeak đều theo một lộ trình rõ ràng, giúp bạn học từ vựng và luyện nói cùng lúc.
+            {t("about.learningPathSubtitle")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {learningPath.map((p) => (
@@ -132,9 +91,9 @@ export default function About() {
                 </div>
                 <div>
                   <p className="font-bold text-slate-800">
-                    Bước {p.step}: {p.title}
+                    {t("about.step")} {p.step}: {t(`about.learningPath.${p.key}.title`)}
                   </p>
-                  <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{p.desc}</p>
+                  <p className="text-sm text-slate-500 mt-0.5 leading-relaxed">{t(`about.learningPath.${p.key}.desc`)}</p>
                 </div>
               </div>
             ))}
@@ -144,11 +103,11 @@ export default function About() {
         {/* Dev info */}
         <section className="text-center space-y-2 pb-8">
           <p className="text-slate-400 text-sm">
-            Được phát triển bởi{" "}
-            <span className="font-semibold text-slate-600">LingoSpeak Team</span>
+            {t("about.developedBy")}{" "}
+            <span className="font-semibold text-slate-600">{t("about.team")}</span>
           </p>
           <p className="text-slate-400 text-sm">
-            © 2026 LingoSpeak. Tất cả quyền được bảo lưu.
+            {t("about.copyright")}
           </p>
         </section>
       </main>
